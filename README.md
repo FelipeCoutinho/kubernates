@@ -2,7 +2,7 @@
 Repositório para guardar projetos de aulas de kubernates e comandos básicos 
 
 Lista todos os pods
-    kubectl get pods
+<br/>    kubectl get pods
 
 executa o arquivo deployment
     kubectl apply k8s/deployment.yaml
