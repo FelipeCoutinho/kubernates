@@ -1,0 +1,15 @@
+# file que faz o apontamento para os pods que tão rodando
+# sempre que queremos acessar um pod, acessamos atraves de um service
+apiVersion: v1
+kind: Service
+metadata:
+  name: appserver-service
+spec:
+  type: ClusterIP
+  # type: LoadBalancer
+  ports:
+      - protocol: TCP
+        name: http-svc
+        port: 3000
+  selector:
+    app: app 
